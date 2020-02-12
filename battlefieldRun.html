@@ -11,13 +11,21 @@
         <H2>にくをあつめろ</H2>
       </div>
         <fieldset class="inputFieldset">
-
+          <div id="app">
+            <div>
+              <span>目標累計貢献度</span>
+              <input type="number" v-model="input"></input>
+            </div>
+            <div>
+              <span>必要なトリガー数：</span><span>{{ output }}</span>
+            </div>
+          </div>
         </fieldset>
         <fieldset class="note">
 
         </fieldset>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="jquery-3.3.1.min.js"></script>
     <script src="battlefieldRun.js"></script>
 </body>
