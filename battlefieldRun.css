@@ -17,11 +17,6 @@ fieldset{
   word-break: break-all;
 }
 
-.note{
-  color: red;
-  font-size: 13px;
-}
-
 input{
   width: 100px;
   text-align: right;
