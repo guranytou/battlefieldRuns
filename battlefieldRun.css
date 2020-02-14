@@ -17,6 +17,33 @@ fieldset{
   word-break: break-all;
 }
 
+#trigerDigest{
+  margin: 10px 0;
+}
+
+.hellRadio{
+  display: none;
+}
+
+.hellRadioLabel{
+  cursor: pointer;
+  padding:5px;
+  border: 1px solid #ffd500;
+  border-radius: 5px;
+  color: #ffd500;
+  background-color: white;
+}
+
+.hellRadio:checked + .hellRadioLabel {
+  background: #ffd500;
+  color: white;
+}
+
+.hellRadioLabel:hover{
+  background: #ffd500;
+  color: white;
+}
+
 .note{
   font-size: 13px;
 }
