@@ -7,8 +7,11 @@
      },
      computed: {
        output: function(){
-           const Hell95Contribution = 51500 * 2 + 910000;
-           const Hell100Contribution = 51500 * 4 + 2680000;
+           const Hell95NeedTriger = 10;
+           const Hell100NeedTriger = 20;
+           const ExTriger = 4;
+           const Hell95Contribution = 51500 * (Hell95NeedTriger / ExTriger) + 910000;
+           const Hell100Contribution = 51500 * (Hell100NeedTriger / ExTriger) + 2680000;
 
            if(this.trigerDigest === 'Hell95'){
             // ŒvŽZŽ®
