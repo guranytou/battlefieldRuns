@@ -19,28 +19,27 @@
             <div id="trigerDigest">
               <div><span>肉の消化方法</span></div>
               <div>
-                <input type="radio" class="hellRadio" name="hellRadio" id="hell95" value="Hell95" v-model="trigerDigest" v-on:change="changeCheckbox" />
+                <input type="radio" class="hellRadio" name="hellRadio" id="hell95" value="Hell95" v-model="trigerDigest"/>
                 <label class="hellRadioLabel" for="hell95">95HELLのみ</label>
-                <input type="radio" class="hellRadio" name="hellRadio" id="hell100" value="Hell100" v-model="trigerDigest" v-on:change="changeCheckbox" />
+                <input type="radio" class="hellRadio" name="hellRadio" id="hell100" value="Hell100" v-model="trigerDigest"/>
                 <label class="hellRadioLabel" for="hell100">100HELLのみ</label>
-                <input type="radio" class="hellRadio" name="hellRadio" id="both" value="both" v-model="trigerDigest" v-on:change="changeCheckbox" />
+                <input type="radio" class="hellRadio" name="hellRadio" id="both" value="both" v-model="trigerDigest"/>
                 <label class="hellRadioLabel" for="both">95HELL&100HELL</label>
               </div>
-            </div>
             <div>
               <span>必要なトリガー数：</span><span>{{ output }}</span>
             </div>
           </div>
         </fieldset>
         <fieldset class="note">
-          <H3>トリガー必要数計算機＠古戦場 ver.0.1</H3>
+          <H3>トリガー必要数計算機＠古戦場 ver.1.0</H3>
           <span>
             累計貢献度に応じて必要トリガー数がわかるもの。95HELL+100HELLは毎日同じ貢献度を稼いだ前提です。</br>
             作った人： ぐらにゅ（<a href="https://twitter.com/gurany_tou">@gurany_tou</a>）
           </span>
         </fieldset>
 
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="vue.js"></script>
     <script src="battlefieldRun.js"></script>
 </body>
 </html>
