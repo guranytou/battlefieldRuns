@@ -21,6 +21,20 @@ fieldset{
   margin: 10px 0;
 }
 
+.hellList,
+.hellListInner {
+  margin: 0;
+  padding: 0;
+}
+
+.hellListInner + .hellListInner {
+  margin-left: 5px;
+}
+
+.hellListInner {
+  display: inline-block;
+}
+
 .hellRadio{
   display: none;
 }
