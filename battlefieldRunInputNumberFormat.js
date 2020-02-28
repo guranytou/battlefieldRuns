@@ -1,0 +1,3 @@
+$(function() {
+  $('#contributionInput').number(true);
+});

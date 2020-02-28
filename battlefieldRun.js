@@ -14,18 +14,32 @@
            const Hell95Contribution = 51500 * (Hell95NeedTriger / ExTriger) + 910000;
            const Hell100Contribution = 51500 * (Hell100NeedTriger / ExTriger) + 2680000;
            const Hell150Contribution = 51500 * (Hell150NeedTriger / ExTriger) + 3600000;
+           let ans = 0;
+
+           const ThisInput = String(this.input);
+           const InputContribution = removeComma(ThisInput);
+
+           function removeComma(value) {
+             var num = value.replace(/,/g, "");
+
+             return parseInt(num);
+           }
 
            if(this.trigerDigest === 'Hell95'){
             // ŒvŽZŽ®
-             return Math.floor(this.input / Hell95Contribution * Hell95NeedTriger)
+            ans = Math.floor(InputContribution / Hell95Contribution * Hell95NeedTriger);
+            return ans.toLocaleString()
            }else if(this.trigerDigest === 'Hell100'){
             // ŒvŽZŽ®
-             return Math.floor(this.input / Hell100Contribution * Hell100NeedTriger)
+             ans = Math.floor(InputContribution / Hell100Contribution * Hell100NeedTriger);
+             return ans.toLocaleString()
            }else if(this.trigerDigest === 'Hell150'){
-              return Math.floor(this.input / Hell150Contribution * Hell150NeedTriger)
+             ans = Math.floor(InputContribution / Hell150Contribution * Hell150NeedTriger);
+             return ans.toLocaleString()
            }else if(this.trigerDigest === 'both'){
             // ŒvŽZŽ®
-             return Math.floor((this.input / 2 / Hell95Contribution * Hell95NeedTriger) +  (this.input / 2 / Hell100Contribution * Hell100NeedTriger))
+             ans = Math.floor((InputContribution / 2 / Hell95Contribution * Hell95NeedTriger) +  (InputContribution / 2 / Hell100Contribution * Hell100NeedTriger));
+             return ans.toLocaleString()
            }else{
              //Žb’è
              return 0;

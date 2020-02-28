@@ -14,7 +14,7 @@
           <div id="app">
             <div>
               <span>目標累計貢献度</span>
-              <input type="number" v-model="input"></input>
+              <input type="text" v-model="input" id="contributionInput"></input>
             </div>
             <div id="trigerDigest">
               <div><span>肉の消化方法</span></div>
@@ -34,7 +34,7 @@
           </div>
         </fieldset>
         <fieldset class="note">
-          <H3>トリガー必要数計算機＠古戦場 ver.1.0</H3>
+          <H3>トリガー必要数計算機＠古戦場 ver.1.1</H3>
           <span>
             累計貢献度に応じて必要トリガー数がわかるもの。95HELL+100HELLは毎日同じ貢献度を稼いだ前提です。</br>
             作った人： ぐらにゅ（<a href="https://twitter.com/gurany_tou">@gurany_tou</a>）
@@ -42,6 +42,10 @@
         </fieldset>
 
     <script src="vue.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="jquery.number.js"></script>
+
+    <script src="battlefieldRunInputNumberFormat.js"></script>
     <script src="battlefieldRun.js"></script>
 </body>
 </html>
